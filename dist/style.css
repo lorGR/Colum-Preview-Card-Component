@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-size: 15px;
+  background-color: #f2f2f2;
+  width: 375px;
+}
+body .container {
+  margin: 80px 25px;
+}
+body .container .card {
+  background-color: #bbbbbb;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+body .container .card__title {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 20px;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+body .container .card__subtitle {
+  font-family: "Lexend Deca", sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 25px;
+}
+body .container .card__button {
+  font-family: "Lexend Deca", sans-serif;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+body .container .card__button span {
+  padding: 15px 35px;
+  border-radius: 50px;
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+body .container .card .card--sedans {
+  color: #e38826;
+}
+body .container .card .card--suv {
+  color: #006970;
+}
+body .container .card .card--luxury {
+  color: #004241;
+}
+body .container .card:first-child {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+body .container .card:last-child {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+body .container .card--sedans {
+  background-color: #e38826;
+}
+body .container .card--suv {
+  background-color: #006970;
+}
+body .container .card--luxury {
+  background-color: #004241;
+}
+
+@media (min-width: 1440px) {
+  body {
+    background-color: #f2f2f2;
+    width: 100%;
+  }
+  body .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px 250px;
+  }
+  body .container .card__button {
+    padding-top: 100px;
+  }
+  body .container .card__button:active .card--sedans--active {
+    background-color: #e38826;
+    color: #f2f2f2;
+    border: 2px solid #f2f2f2;
+  }
+  body .container .card__button:active .card--suv--active {
+    background-color: #006970;
+    color: #f2f2f2;
+    border: 2px solid #f2f2f2;
+  }
+  body .container .card__button:active .card--luxury-active {
+    background-color: #004241;
+    color: #f2f2f2;
+    border: 2px solid #f2f2f2;
+  }
+  body .container .card:first-child {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  body .container .card:last-child {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
